@@ -2,7 +2,7 @@
 int main()
 {
     int n,num,max;
-    printf("enter no of integrs");
+    printf("Enter no of integrs");
     scanf("%d",&n);
     printf("enter no 1");
     scanf("%d",&num);
