@@ -6,7 +6,7 @@ int main() {
     int result;
 
     // Input
-    printf("Enter two integers (x and y): ");
+    printf("Enter Two Integers (x and y): ");
     scanf("%d %d", &x, &y);
 
     x2 = x * x;
