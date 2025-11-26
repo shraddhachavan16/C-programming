@@ -3,7 +3,7 @@
 int main()
 {
     int n=0;
-    printf("enter number of array:");
+    printf("Enter number of array:");
     scanf("%d",&n);
     int*arr=(int*)malloc(sizeof(int)*n);
     if(arr==NULL)
