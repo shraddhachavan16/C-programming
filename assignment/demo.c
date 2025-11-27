@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,7 +12,7 @@ int main() {
     pos = (int *)malloc(n * sizeof(int));
     neg = (int *)malloc(n * sizeof(int));
 
-    printf("Enter %d elements:\n", n);
+    printf("Enter %d Elements:\n", n);
     for(i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
