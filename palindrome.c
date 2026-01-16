@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int MAX=MAX/10,MIN=MIN/10;
+    int n,x,temp;
     int ans=0;
-    int x=0;
-    while(x!=0)
+    printf("enter the number:");
+    scanf("%d",&n);
+    while(x>0)
     {
-        if(MAX<ans||MIN>ans)
-        {
-            ans=ans*10+(x%10);
-            x=x/10;
-        }
-        printf(ans);
-}
+        temp=x%10;
+        ans=ans*10+temp;
+        x=x/10;
+    }
+    return ans;
 }
