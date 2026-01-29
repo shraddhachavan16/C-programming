@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roomify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Roomify</div>
+  <button class="btn">Login / Register</button>
+</header>
+
+<p class="subtitle">Connect Match, Live Together.</p>
+<h3 class="title">Male & Female Roommates in India</h3>
+
+<div class="filters">
+  <button class="tab active">All listing</button>
+  <button class="tab">Rooms</button>
+  <button class="tab">Roommates</button>
+
+  <input type="text" placeholder="India">
+  <select>
+    <option>Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+</div>
+
+<hr>
+
+<div class="cards">
+
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+    </div>
+    <div class="info">
+      <h4>Viman Nagar</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹3500</p>
+      <p>Looking for: Any</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Viman Nagar')">Chat</button>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+    </div>
+    <div class="info">
+      <h4>Pratiksha</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹8000</p>
+      <p>Looking for: Any</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Pratiksha')">Chat</button>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg">
+    </div>
+    <div class="info">
+      <h4>Shraddha</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹6000</p>
+      <p>Looking for: Any</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Shraddha')">Chat</button>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+    </div>
+    <div class="info">
+      <h4>Kunal</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹5000</p>
+      <p>Looking for: male</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Kunal')">Chat</button>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/men/54.jpg">
+    </div>
+    <div class="info">
+      <h4>Aniket</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹5000</p>
+      <p>Looking for: Any</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Aniket')">Chat</button>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <div class="avatar">
+      <img src="https://randomuser.me/api/portraits/men/76.jpg">
+    </div>
+    <div class="info">
+      <h4>Varad</h4>
+      <p>Pune, Maharashtra</p>
+      <p>Rent: ₹5000</p>
+      <p>Looking for: Female</p>
+    </div>
+    <button class="chat-btn" onclick="openChat('Varad')">Chat</button>
+  </div>
+
+</div>
+
+<!-- Chat Popup -->
+<div id="chatBox" class="chat-box">
+  <div class="chat-header">
+    <span id="chatUser"></span>
+    <button onclick="closeChat()">✖</button>
+  </div>
+
+  <div id="chatBody" class="chat-body"></div>
+
+  <div class="chat-footer">
+    <input type="text" id="chatInput" placeholder="Type message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
