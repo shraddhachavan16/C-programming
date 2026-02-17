@@ -2,7 +2,7 @@
 int main()
 {
     int num,check;
-    printf("enter a number:");
+    printf("Enter a number:");
     scanf("%d",&num);
     if(num<10)
         check=1;
@@ -13,13 +13,13 @@ int main()
     switch(check)
     {
         case 1:
-            printf("small\n");
+            printf("Small\n");
             break;
         case 2:
-            printf("equal\n");
+            printf("Equal\n");
             break;
         case 3:
-            printf("larger\n");
+            printf("Larger\n");
             break;
     }
         return 0;
