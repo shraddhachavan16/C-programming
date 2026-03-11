@@ -1,25 +1,27 @@
-//2502
-
 CC = g++
-CFLAGS = -g -Wno-deprecated
+CFLAGS = -g -Wall
 
-TARGET = main
+TARGET = main.exe
 
-OBJS = $(TARGET).o Board.o Queen.o
-
-HEADERS = Board.h Queen.h
-
-SOURCES = main.cpp Board.cpp Queen.cpp
+OBJS = main.o Matrix.o Linearsystem.o Gaussian.o Lu.o
 
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
-$(OBJS): $(SOURCES) $(HEADERS)
-	$(CC) $(CFLAGS) -c $(SOURCES)
+main.o: main.cpp
+	$(CC) $(CFLAGS) -c main.cpp
 
-tidy:
-	rm -rf $(OBJS) *~
+Matrix.o: Matrix.cpp Matrix.h
+	$(CC) $(CFLAGS) -c Matrix.cpp
 
-clean: tidy
-	rm -rf $(TARGET)
+Linearsystem.o: Linearsystem.cpp Linearsystem.h
+	$(CC) $(CFLAGS) -c Linearsystem.cpp
 
+Gaussian.o: Gaussian.cpp Gaussian.h
+	$(CC) $(CFLAGS) -c Gaussian.cpp
+
+Lu.o: Lu.cpp Lu.h
+	$(CC) $(CFLAGS) -c Lu.cpp
+
+clean:
+	del *.o main.exe
