@@ -30,5 +30,5 @@ int main()
     printf("Year    : %d\n", c.year);
     printf("Price   : %.2f\n", c.price);
 
-    return 0;
+
 }
