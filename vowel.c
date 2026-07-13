@@ -16,6 +16,6 @@ int main()
             {
             printf("not an alphabet");
             }
-        return 0;
+       
 }
 
