@@ -22,5 +22,5 @@ int main() {
 
     display(&s);
 
-    return 0;
+  
 }
