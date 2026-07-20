@@ -24,5 +24,5 @@ int main() {
     printf("Name: %s\n", e.name);
     printf("Salary: %.2f\n", e.salary);
 
-    return 0;
+    
 }
