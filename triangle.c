@@ -9,5 +9,3 @@ int main()
         printf("triangle is valid");
     else
         printf("triangle is not valid");
-    return 0;
-}
