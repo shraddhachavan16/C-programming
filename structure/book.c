@@ -24,7 +24,7 @@ int main()
     printf("Enter Book Price: ");
     scanf("%f", &b.price);
 
-    printf("\n----- Book Details -----\n");
+    printf("Book Details");
     printf("Book ID     : %d\n", b.bookId);
     printf("Book Title  : %s\n", b.title);
     printf("Author Name : %s\n", b.author);
