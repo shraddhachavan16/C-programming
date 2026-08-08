@@ -8,5 +8,5 @@ int main()
     scanf("%d",&b);
     c=a*b;
     printf("The product of %d and %d is %d",a,b,c);
-    return 0;
+   
 }
