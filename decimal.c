@@ -13,9 +13,7 @@ int main() {
     }
 
     printf("Binary = ");
-
     for(int j = i - 1; j >= 0; j--)
         printf("%d", binary[j]);
-
     return 0;
 }
